@@ -5,6 +5,6 @@ import * as indexService from '../services/index.service';
 export default {
   getRoute: asyncHandler(async (req: Request, res: Response) => {
     const data = indexService.getData();
-    sendResponse(res, data);
+    sendResponse(res, { data });
   })
 };
